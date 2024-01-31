@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .form-container {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 15px; /* Adjust this value for the desired curve */
+}
+
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        
+        border: 1px solid #ccc;
+        border-radius: 15px; /* Adjust this value for the desired curve */
+        box-sizing: border-box;
+    }
+    
+  
+
+  .btn {
+    background-color: #3897f0;
+    color: white;
+    padding: 8px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background-color: #357ae8;
+  }
+
+  .divider {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+    margin: 0 10px;
+  }
+
+  .or {
+    color: #8e8e8e;
+  }
+
+  .switch-form {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #003569;
+    cursor: pointer;
+  }
+  .person{
+    display: flex;
+  }

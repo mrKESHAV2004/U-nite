@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U-nite</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    .nav-item {
+      padding: 0px 18px;
+    }
+    .nav-link {
+      font-size: 1rem;
+      color: black;
+    }
+    .search-container {
+      display: flex;
+      align-items: center;
+      margin-left: auto; /* Align the search container to the right */
+    }
+
+    .search-bar {
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .search-button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100vw;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      position: relative;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      transition: box-shadow 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .card-content {
+      padding: 10px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .card-buttons {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+      background-color: #fff;
+    }
+
+    .card-buttons button {
+      margin-right: 5px;
+      width: 90px;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px rgba(35, 205, 208, 0.4);
+    }
+
+    .card:hover .card-buttons {
+      display: block;
+      display: flex;
+    }
+    .card:hover .card-description .card-title{
+        display: none;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="LOGO.png" style="width: 6%" />
+    <a class="navbar-brand" href="#">U-NITE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <div class="search-container">
+          <input type="text" class="search-bar" placeholder="Search..." />
+          <button class="search-button">Search</button>
+        </div>
+        <li class="nav-item ml-auto">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card random-height">
+      <img src="https://source.unsplash.com/random/250x200" alt="Image">
+      <div class="card-content">
+        <h3 class="card-title">Card Title</h3>
+        <p class="card-description">Card description</p>
+      </div>
+      <div class="card-buttons">
+        <button class="btn btn-primary">Get Info</button>
+        <button class="btn btn-secondary">Preview</button>
+      </div>
+    </div>
+    <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+      <div class="card random-height">
+        <img src="https://source.unsplash.com/random/250x200" alt="Image">
+        <div class="card-content">
+          <h3 class="card-title">Card Title</h3>
+          <p class="card-description">Card description</p>
+        </div>
+        <div class="card-buttons">
+          <button class="btn btn-primary">Get Info</button>
+          <button class="btn btn-secondary">Preview</button>
+        </div>
+      </div>
+    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
